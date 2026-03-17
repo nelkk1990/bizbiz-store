@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Templates — Professional Canva Templates | Instant Download</title>
+  <meta name="description" content="High-quality Canva templates for resumes, budget planners, and social media. Instant digital download. Editable with free Canva account.">
+  <meta property="og:title" content="Digital Templates — Professional Canva Templates">
+  <meta property="og:description" content="Resumes, budget planners & social media templates. Instant download, editable in free Canva.">
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #e94560;
+      --light: #f8f9fa;
+      --muted: #6c757d;
+      --card-bg: #ffffff;
+      --border: #e9ecef;
+      --success: #28a745;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #1a1a2e; line-height: 1.6; }
+
+    /* Header */
+    header { background: var(--primary); color: white; padding: 1.5rem 2rem; text-align: center; }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p { color: #a0a8c0; margin-top: 0.4rem; font-size: 1rem; }
+    .trust-badges { display: flex; gap: 1.5rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
+    .badge { background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; color: #c8d0e0; }
+
+    /* Navigation / Category tabs */
+    .categories { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .cat-btn { padding: 0.4rem 1rem; border: 2px solid var(--border); background: white; border-radius: 20px; cursor: pointer; font-size: 0.875rem; color: var(--muted); transition: all 0.2s; }
+    .cat-btn.active, .cat-btn:hover { border-color: var(--accent); color: var(--accent); background: #fff5f7; }
+
+    /* Main */
+    main { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+    .section-title { font-size: 1.4rem; font-weight: 700; color: var(--primary); margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); display: inline-block; }
+
+    /* Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 3rem; }
+
+    /* Cards */
+    .card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .card-preview { height: 180px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .card-preview.resume { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+    .card-preview.budget { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+    .card-preview.social { background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); }
+    .preview-icon { font-size: 3rem; opacity: 0.9; }
+    .preview-canva-link { position: absolute; top: 8px; right: 8px; background: rgba(255,255,255,0.9); border-radius: 6px; padding: 4px 8px; font-size: 0.7rem; color: #333; text-decoration: none; font-weight: 600; }
+    .preview-canva-link:hover { background: white; }
+    .card-body { padding: 1rem 1.25rem; }
+    .card-title { font-size: 0.95rem; font-weight: 700; color: var(--primary); line-height: 1.3; margin-bottom: 0.4rem; }
+    .card-desc { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.75rem; line-height: 1.5; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; }
+    .price { font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .price-note { font-size: 0.7rem; color: var(--muted); }
+    .buy-btn { background: var(--accent); color: white; border: none; padding: 0.5rem 1.1rem; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 0.875rem; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.1s; }
+    .buy-btn:hover { background: #c73652; transform: scale(1.03); }
+
+    /* How it works */
+    .how-it-works { background: white; border-radius: 16px; padding: 2rem; margin: 2rem 0; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .how-it-works h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; }
+    .step { text-align: center; padding: 1rem; }
+    .step-num { width: 40px; height: 40px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; margin: 0 auto 0.75rem; font-size: 1.1rem; }
+    .step h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .step p { font-size: 0.8rem; color: var(--muted); }
+
+    /* FAQ */
+    .faq { margin: 2rem 0; }
+    .faq h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+    .faq-item { background: white; border-radius: 10px; margin-bottom: 0.75rem; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+    .faq-q { padding: 1rem 1.25rem; font-weight: 600; font-size: 0.9rem; cursor: pointer; }
+    .faq-a { padding: 0 1.25rem 1rem; font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+    /* Footer */
+    footer { background: var(--primary); color: #a0a8c0; text-align: center; padding: 1.5rem; font-size: 0.85rem; }
+    footer a { color: #e0e0e0; }
+
+    /* Notification bar */
+    .notif { background: #1a1a2e; color: white; text-align: center; padding: 0.6rem; font-size: 0.8rem; }
+    .notif span { color: var(--accent); font-weight: 700; }
+
+    /* Modal */
+    .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: white; border-radius: 16px; padding: 2rem; max-width: 440px; width: 90%; text-align: center; position: relative; }
+    .modal h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .modal p { font-size: 0.875rem; color: var(--muted); margin-bottom: 1.25rem; }
+    .modal .product-name { font-size: 0.95rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem; }
+    .modal .price-big { font-size: 2rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem; }
+    .modal .paypal-btn { background: #0070ba; color: white; border: none; padding: 0.85rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer; width: 100%; text-decoration: none; display: block; margin-bottom: 0.75rem; transition: background 0.2s; }
+    .modal .paypal-btn:hover { background: #005ea6; }
+    .modal .instructions { background: #f8f9fa; border-radius: 8px; padding: 1rem; font-size: 0.8rem; color: var(--muted); text-align: left; margin-bottom: 0.75rem; }
+    .modal .instructions strong { color: var(--primary); }
+    .modal .canva-preview-link { display: inline-block; font-size: 0.8rem; color: #6c757d; text-decoration: underline; margin-bottom: 1rem; }
+    .close-btn { position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--muted); }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="notif">⚡ <span>Instant delivery</span> — get your template link immediately after payment</div>
+
+<header>
+  <h1>✦ Digital Templates</h1>
+  <p>Professional Canva templates — resumes, planners & social media</p>
+  <div class="trust-badges">
+    <span class="badge">📥 Instant Download</span>
+    <span class="badge">✏️ Free Canva Compatible</span>
+    <span class="badge">🔄 Lifetime Access</span>
+    <span class="badge">🇦🇺 AU Based Seller</span>
+  </div>
+</header>
+
+<nav class="categories">
+  <button class="cat-btn active" onclick="filterCat('all')">All Products (20)</button>
+  <button class="cat-btn" onclick="filterCat('resume')">Resume Templates (5)</button>
+  <button class="cat-btn" onclick="filterCat('budget')">Budget Planners (7)</button>
+  <button class="cat-btn" onclick="filterCat('social')">Social Media (8)</button>
+</nav>
+
+<main>
+
+  <!-- How it works -->
+  <div class="how-it-works">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><h3>Choose template</h3><p>Browse 20 professional designs below</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Pay securely</h3><p>Pay via PayPal — takes under 1 minute</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Get instant access</h3><p>Your Canva template link delivered immediately</p></div>
+      <div class="step"><div class="step-num">4</div><h3>Edit & use</h3><p>Free Canva account — edit text, colours, layout</p></div>
+    </div>
+  </div>
+
+  <!-- Resume Templates -->
+  <div class="section-title" data-cat="resume">📄 Resume Templates</div>
+  <div class="grid" id="grid-resume">
+
+    <div class="card" data-cat="resume">
+      <div class="card-preview resume">
+        <span class="preview-icon">📋</span>
+        <a href="https://www.canva.com/d/5FKPlgWqnGb48dH" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">ATS Professional Resume</div>
+        <div class="card-desc">ATS-optimised, clean layout. Gets past screening software while looking polished for human reviewers.</div>
+        <div class="card-footer">
+          <div><div class="price">$12</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('ATS Professional Resume Template', 12, 'https://www.canva.com/d/5FKPlgWqnGb48dH')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="resume">
+      <div class="card-preview resume">
+        <span class="preview-icon">👔</span>
+        <a href="https://www.canva.com/d/WK9r4rrz5Qm0bXh" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Executive Senior Leadership Resume</div>
+        <div class="card-desc">Premium two-column layout for C-suite and directors. Charcoal-gold palette that signals authority.</div>
+        <div class="card-footer">
+          <div><div class="price">$18</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Executive Senior Leadership Resume', 18, 'https://www.canva.com/d/WK9r4rrz5Qm0bXh')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="resume">
+      <div class="card-preview resume">
+        <span class="preview-icon">🎨</span>
+        <a href="https://www.canva.com/d/AIRGBUd3bhB8evo" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Creative/Designer Resume</div>
+        <div class="card-desc">Bold, modern layout for designers and creatives. Shows your design eye before an interview.</div>
+        <div class="card-footer">
+          <div><div class="price">$13</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Creative Designer Resume Template', 13, 'https://www.canva.com/d/AIRGBUd3bhB8evo')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="resume">
+      <div class="card-preview resume">
+        <span class="preview-icon">🎓</span>
+        <a href="https://www.canva.com/d/DpI6_UABv4lAls8" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Graduate/Student Resume</div>
+        <div class="card-desc">Your first professional resume. Highlights education, internships, and skills for new grads.</div>
+        <div class="card-footer">
+          <div><div class="price">$10</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Graduate Student Resume Template', 10, 'https://www.canva.com/d/DpI6_UABv4lAls8')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="resume">
+      <div class="card-preview resume">
+        <span class="preview-icon">🏥</span>
+        <a href="https://www.canva.com/d/sV8PywZs_7Q3Zvi" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Nurse Healthcare Resume</div>
+        <div class="card-desc">Built for nurses and healthcare professionals. ATS-compatible with clinical experience sections.</div>
+        <div class="card-footer">
+          <div><div class="price">$12</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Nurse Healthcare Resume Template', 12, 'https://www.canva.com/d/sV8PywZs_7Q3Zvi')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Budget Planners -->
+  <div class="section-title" data-cat="budget">💰 Budget & Finance Planners</div>
+  <div class="grid" id="grid-budget">
+
+    <div class="card" data-cat="budget">
+      <div class="card-preview budget">
+        <span class="preview-icon">📅</span>
+        <a href="https://www.canva.com/d/DpqeRYfv-9sdypj" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Weekly Budget Planner</div>
+        <div class="card-desc">Track every week's income and expenses. Clean printable layout for AU households.</div>
+        <div class="card-footer">
+          <div><div class="price">$7</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Weekly Budget Planner', 7, 'https://www.canva.com/d/DpqeRYfv-9sdypj')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="budget">
+      <div class="card-preview budget">
+        <span class="preview-icon">📊</span>
+        <a href="https://www.canva.com/d/8sVt-zBPNArXpbo" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Monthly Bill Tracker</div>
+        <div class="card-desc">Never miss a payment. Track all recurring bills with due dates and paid status in one place.</div>
+        <div class="card-footer">
+          <div><div class="price">$7</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Monthly Bill Tracker', 7, 'https://www.canva.com/d/8sVt-zBPNArXpbo')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="budget">
+      <div class="card-preview budget">
+        <span class="preview-icon">⬇️</span>
+        <a href="https://www.canva.com/d/1s6aqcH6zCCxByO" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Debt Payoff Tracker</div>
+        <div class="card-desc">Visual progress tracker for snowball and avalanche debt payoff methods. Stay motivated.</div>
+        <div class="card-footer">
+          <div><div class="price">$8</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Debt Payoff Tracker', 8, 'https://www.canva.com/d/1s6aqcH6zCCxByO')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="budget">
+      <div class="card-preview budget">
+        <span class="preview-icon">🎯</span>
+        <a href="https://www.canva.com/d/xigPg---64g9KHl" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Savings Goal Tracker</div>
+        <div class="card-desc">Visual fill-in chart to track savings milestones. Multiple goal slots for different targets.</div>
+        <div class="card-footer">
+          <div><div class="price">$7</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Savings Goal Tracker', 7, 'https://www.canva.com/d/xigPg---64g9KHl')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="budget">
+      <div class="card-preview budget">
+        <span class="preview-icon">🛒</span>
+        <a href="https://www.canva.com/d/DT0N5JLU00l4n5Q" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Grocery Budget Planner</div>
+        <div class="card-desc">Cut your supermarket bill. Weekly categories: fresh, frozen, pantry, household. AU-friendly.</div>
+        <div class="card-footer">
+          <div><div class="price">$7</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Grocery Budget Planner', 7, 'https://www.canva.com/d/DT0N5JLU00l4n5Q')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="budget">
+      <div class="card-preview budget">
+        <span class="preview-icon">🗓️</span>
+        <a href="https://www.canva.com/d/Yw-zlkaLUaJY_qi" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Zero-Based Monthly Budget Planner</div>
+        <div class="card-desc">Give every dollar a job. Zero-sum budgeting method used by personal finance experts.</div>
+        <div class="card-footer">
+          <div><div class="price">$8</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Zero-Based Monthly Budget Planner', 8, 'https://www.canva.com/d/Yw-zlkaLUaJY_qi')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="budget">
+      <div class="card-preview budget">
+        <span class="preview-icon">📈</span>
+        <a href="https://www.canva.com/d/4zYBbmi-Ufc1ubl" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Yearly Budget Overview</div>
+        <div class="card-desc">12-month budget at a glance. Plan big expenses, holidays, and yearly savings targets.</div>
+        <div class="card-footer">
+          <div><div class="price">$9</div><div class="price-note">one-time</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Yearly Budget Overview', 9, 'https://www.canva.com/d/4zYBbmi-Ufc1ubl')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Social Media Templates -->
+  <div class="section-title" data-cat="social">📱 Social Media Templates</div>
+  <div class="grid" id="grid-social">
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">📸</span>
+        <a href="https://www.canva.com/d/S4uzaqFYAgqhnAy" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Instagram Post Templates Pack (20 designs)</div>
+        <div class="card-desc">20 feed post templates for small businesses and creators. Consistent branded look in minutes.</div>
+        <div class="card-footer">
+          <div><div class="price">$15</div><div class="price-note">20 templates</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Instagram Post Templates Pack (20 designs)', 15, 'https://www.canva.com/d/S4uzaqFYAgqhnAy')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">📲</span>
+        <a href="https://www.canva.com/d/CV9iFB2WmYVKjHE" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Instagram Stories & Reels Pack (20+5)</div>
+        <div class="card-desc">20 Stories + 5 Reels cover templates for coaches, businesses, and creators. Converts followers.</div>
+        <div class="card-footer">
+          <div><div class="price">$15</div><div class="price-note">25 templates</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Instagram Stories and Reels Pack', 15, 'https://www.canva.com/d/CV9iFB2WmYVKjHE')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">📌</span>
+        <a href="https://www.canva.com/d/2keJDoiyxN7Tlf5" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Pinterest Pin Templates Pack (15 designs)</div>
+        <div class="card-desc">15 pin templates to drive traffic to your blog, shop, or website. Optimised 2:3 ratio.</div>
+        <div class="card-footer">
+          <div><div class="price">$12</div><div class="price-note">15 templates</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Pinterest Pin Templates Pack', 12, 'https://www.canva.com/d/2keJDoiyxN7Tlf5')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">▶️</span>
+        <a href="https://www.canva.com/d/MUulTDxnse4nUZq" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">YouTube Thumbnail Pack (10 designs)</div>
+        <div class="card-desc">10 click-worthy thumbnails to maximise CTR. Bold, high-contrast. Proven to stand out in search.</div>
+        <div class="card-footer">
+          <div><div class="price">$12</div><div class="price-note">10 templates</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('YouTube Thumbnail Pack (10 designs)', 12, 'https://www.canva.com/d/MUulTDxnse4nUZq')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">👔</span>
+        <a href="https://www.canva.com/d/8JBGEdVluIXEpR8" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">LinkedIn Post Templates Pack (15)</div>
+        <div class="card-desc">15 LinkedIn templates for growing your personal brand. Optimised for LinkedIn's algorithm.</div>
+        <div class="card-footer">
+          <div><div class="price">$12</div><div class="price-note">15 templates</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('LinkedIn Post Templates Pack', 12, 'https://www.canva.com/d/8JBGEdVluIXEpR8')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">📘</span>
+        <a href="https://www.canva.com/d/tfHiLI8ww8I8ZXc" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Facebook Post Templates Pack (15)</div>
+        <div class="card-desc">15 post templates for businesses and pages. Event posts, quote posts, product showcase.</div>
+        <div class="card-footer">
+          <div><div class="price">$12</div><div class="price-note">15 templates</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Facebook Post Templates Pack', 12, 'https://www.canva.com/d/tfHiLI8ww8I8ZXc')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">📆</span>
+        <a href="https://www.canva.com/d/dEpIfEaKybQwuN4" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Social Media Content Calendar</div>
+        <div class="card-desc">Plan a whole month of content in one afternoon. Works for Instagram, Facebook, LinkedIn, TikTok.</div>
+        <div class="card-footer">
+          <div><div class="price">$12</div><div class="price-note">monthly planner</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('Social Media Content Calendar', 12, 'https://www.canva.com/d/dEpIfEaKybQwuN4')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="social">
+      <div class="card-preview social">
+        <span class="preview-icon">🎵</span>
+        <a href="https://www.canva.com/d/CV9iFB2WmYVKjHE" target="_blank" class="preview-canva-link">Preview →</a>
+      </div>
+      <div class="card-body">
+        <div class="card-title">TikTok Video Cover Templates (10)</div>
+        <div class="card-desc">10 TikTok cover templates to make your profile look professional. Stop the scroll with bold design.</div>
+        <div class="card-footer">
+          <div><div class="price">$11</div><div class="price-note">10 templates</div></div>
+          <a href="#" class="buy-btn" onclick="openModal('TikTok Video Cover Templates', 11, 'https://www.canva.com/d/CV9iFB2WmYVKjHE')">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q">How do I receive my template after buying?</div>
+      <div class="faq-a">After completing PayPal payment, send your PayPal transaction ID to the email in your receipt. You'll receive the Canva template link within minutes. The link gives you a personal copy to edit freely in Canva.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do I need a paid Canva account?</div>
+      <div class="faq-a">No. All templates work with a free Canva account. Simply click the template link, create a free Canva account (if you don't have one), and you'll have a fully editable copy.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I edit colours, fonts, and text?</div>
+      <div class="faq-a">Yes — everything is editable. Change colours, fonts, photos, and all text directly in Canva. You get your own editable copy, not a locked file.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is there a refund policy?</div>
+      <div class="faq-a">Due to the digital nature of the products, we offer refunds only if the template link is non-functional. Please preview the template using the "Preview →" link before purchasing.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Are these templates for commercial use?</div>
+      <div class="faq-a">Resume and planner templates are for personal use. Social media templates may be used for your business or clients. Do not resell the templates themselves.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>Digital Templates &copy; 2026 · Canberra, ACT, Australia · All templates editable in free Canva · <a href="mailto:templates@example.com">Contact</a></p>
+</footer>
+
+<!-- Purchase Modal -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="close-btn" onclick="closeModal()">✕</button>
+    <h3>Complete Purchase</h3>
+    <div class="product-name" id="modal-product">Product Name</div>
+    <div class="price-big" id="modal-price">$12</div>
+    <div class="instructions">
+      <strong>How delivery works:</strong><br>
+      1. Click to purchase on Payhip — secure checkout<br>
+      2. Complete payment (takes ~1 min)<br>
+      3. <strong>Your Canva template link is delivered instantly</strong> by Payhip ⚡<br>
+      4. Click the link → edit in free Canva → download
+    </div>
+    <a href="#" id="paypal-link" target="_blank" class="paypal-btn" onclick="closeModal()">
+      💙 Pay with PayPal
+    </a>
+    <a href="#" id="canva-preview" target="_blank" class="canva-preview-link">Preview template before buying →</a>
+  </div>
+</div>
+
+<script>
+  const STORE_LIVE = false; // ← set true once Payhip products are uploaded
+
+  function openModal(name, price, canvaUrl) {
+    document.getElementById('modal-product').textContent = name;
+    document.getElementById('modal-price').textContent = 'A$' + price;
+    if (STORE_LIVE) {
+      document.getElementById('paypal-link').style.display = 'block';
+    } else {
+      document.getElementById('paypal-link').href = 'https://payhip.com/';
+      document.getElementById('paypal-link').textContent = '🛒 Purchase on Payhip (launching soon)';
+    }
+    document.getElementById('canva-preview').href = canvaUrl;
+    document.getElementById('modal').classList.add('open');
+    return false;
+  }
+
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+  }
+
+  function filterCat(cat) {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    document.querySelectorAll('.card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('.section-title').forEach(title => {
+      if (cat === 'all' || title.dataset.cat === cat) {
+        title.style.display = '';
+      } else {
+        title.style.display = 'none';
+      }
+    });
+  }
+
+  // Close modal on overlay click
+  document.getElementById('modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+</script>
+
+</body>
+</html>
