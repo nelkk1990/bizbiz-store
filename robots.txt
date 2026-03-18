@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nelkk1990.github.io/bizbiz-store/sitemap.xml
