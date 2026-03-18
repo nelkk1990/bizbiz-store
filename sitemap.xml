@@ -6,6 +6,38 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- GitHub Pages product landing pages (SEO-optimised, long-tail keywords) -->
+  <url>
+    <loc>https://nelkk1990.github.io/bizbiz-store/products/ats-resume-canva-template.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nelkk1990.github.io/bizbiz-store/products/nurse-resume-canva-template.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nelkk1990.github.io/bizbiz-store/products/budget-planner-canva-template.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nelkk1990.github.io/bizbiz-store/products/social-media-canva-templates.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nelkk1990.github.io/bizbiz-store/products/resume-canva-templates.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Fourthwall product pages -->
   <url>
     <loc>https://digitaltemplatehub-shop.fourthwall.com/products/ats-professional-resume-template</loc>
     <lastmod>2026-03-18</lastmod>
